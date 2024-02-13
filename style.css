@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(pink, rgb(248, 94, 120));
+    background-repeat: no-repeat;
+    font-family: 'Comic Sans MS';
+}
+.celek{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* ------------ MAIN -------------- */
+
+#text{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ------------ TEXT -------------- */
+
+.tlacitko{
+    border: 3px solid red;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100px;
+    height: 70px;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    margin: 10px;
+}
+.tlacitko:hover{
+    background-color: red;
+    color: white;
+}
+.tlacitko:active{
+    background-color: rgb(248, 58, 58);
+    border: 3px solid rgb(248, 58, 58);
+}
+
+/* ------------ TLAČÍTKO -------------- */
+
+.buttons, .obrazek{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.obrazek img{
+    height: 260px;
+    scale: 1;
+}
+
+#obsah{
+    opacity: 0;
+}
+
+/* ------------ mobile -------------- */
+
+@media screen and (min-width: 600px) {
+    #text{
+        font-size: 25px;
+        font-weight: normal;
+    }
+    
+}
+
+@media screen and (min-width: 1060px) {
+    #text{
+        font-size: 45px;
+    }
+    .obrazek img{
+        height: 360px;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) {
+    #text{
+        font-size: 50px;
+    }
+    
+}
