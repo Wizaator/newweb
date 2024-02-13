@@ -1,3 +1,4 @@
+/* ------------ MAIN -------------- */
 *{
     box-sizing: border-box;
 }
@@ -14,7 +15,8 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-/* ------------ MAIN -------------- */
+
+/* ------------ TEXT -------------- */
 
 #text{
     display: flex;
@@ -23,7 +25,7 @@ body{
     font-weight: bold;
 }
 
-/* ------------ TEXT -------------- */
+/* ------------ TLAČÍTKO -------------- */
 
 .tlacitko{
     border: 3px solid red;
@@ -43,14 +45,14 @@ body{
     background-color: rgb(248, 58, 58);
     border: 3px solid rgb(248, 58, 58);
 }
-
-/* ------------ TLAČÍTKO -------------- */
-
 .buttons, .obrazek{
     display: flex;
     justify-content: center;
     align-content: center;
 }
+
+/* ------------ zbytek -------------- */
+
 .obrazek img{
     height: 260px;
     scale: 1;
